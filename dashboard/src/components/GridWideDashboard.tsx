@@ -129,7 +129,7 @@ export default function GridWideDashboard() {
     let isMounted = true;
     setLoading(true);
 
-    fetch('/RUTZ_thermal_slim_v2.csv')
+    fetch(`${import.meta.env.BASE_URL}RUTZ_thermal_slim_v2.csv`)
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.text();

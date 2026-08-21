@@ -351,7 +351,7 @@ export default function App() {
               {/* Logo - top right, small and institutional */}
               <div className="absolute top-0 right-0 w-[140px] h-[65px] flex items-center justify-end">
                 <img 
-                  src="/Polito.png" 
+                  src={`${import.meta.env.BASE_URL}Polito.png`} 
                   alt="Politecnico di Torino Logo" 
                   className="max-w-full max-h-full object-contain"
                   referrerPolicy="no-referrer"
